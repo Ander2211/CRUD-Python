@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Empleado</title>
+</head>
+<body>
+    <h1>Editar Empleado</h1>
+    <form method="post">
+        <label>Nombre:</label><input type="text" name="nombre" value="{{ empleado[1] }}" required><br>
+        <label>Salario:</label><input type="number" step="0.01" name="salario" value="{{ empleado[2] }}"><br>
+        <label>Área:</label><input type="text" name="area" value="{{ empleado[3] }}"><br>
+        <input type="submit" value="Actualizar">
+    </form>
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>
